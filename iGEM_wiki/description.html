@@ -1,0 +1,89 @@
+{% extends "layout.html" %} {% block title %}Project Description{% endblock %}
+{% block lead %}Describe how and why you chose your iGEM project.{% endblock %}
+{% block page_content %}
+<body>
+      <h4>Bronze Medal Criterion #3</h4>
+      <p>Describe how and why you chose your iGEM project.</p>
+      <p></p>
+      <hr />
+      <p>
+        Please see the
+        <a href="https://competition.igem.org/judging/medals"
+          >2023 Medals Page</a
+        >
+        for more information.
+      </p>
+
+    <h2>What should this page contain?</h2>
+    <hr />
+    <p> With the aim of revolutionizing tissue engineering and regenerative medicine (TERM), the NYUAD iGEM team is focusing on to producing a bacterial collagen-like protein as a sustainable substitute for animal-derived collagen. Collagen, a major ECM component that is ubiquitous in the human body, is widely used for drug delivery, gene delivery, and TERM due to its biocompatibility and low immunogenicity. Collagen is known as an optimal scaffold base for osteochondral tissue engineering. Traumatic injuries, congenital defects, and aging often result in large bone or cartilage defects that require surgical intervention for functional restoration. It is estimated that over 2.2 million such procedures are performed annually, with the number only growing (Archunan & Petronis, 2021). Moreover, collagen is the key player behind the cornea’s transparency and functioning. However, certain diseases, such as keratoconus, can disrupt its functioning; a current promising technique for resolving this issue is a bioengineered corneal transplant - made entirely of collagen. This procedure has been shown to work on 20 advanced keratoconus patients, but has the potential to change the lives of over 175 million lives of people suffering from vision loss (Gomes et al., 2022). Furthermore, the global market for collagen wound dressings - usually from bovine sources - is USD 926 million, a value expected to expand by a compound annual growth rate of 5% (Mathew-Steiner et al., 2021).</p>
+    <p>Collagen is currently commercially extracted from bovine, porcine, and marine sources; this brings about a range of issues, including the possibility of disease transmission, poor scalability, and ethical and religious concerns. These concerns motivated us to synthesize an engineered, low-cost, and highly scalable alternative to animal-derived collagen by using bacterial collagen-like protein (CLP). Our iGEM project aims to address this issue and could offer several advantages, including high purity, consistent quality, ample supply, and cost-effectiveness.</p>
+    <p>Our project focuses on the incorporation of Hyp and other non-coding amino acids, using genetic code expansion (GCE), along with functional peptide sequences in recombinant CLP produced in E. coli. Several collagen-like sequences have been identified in bacteria, and among these Scl1 and Scl2 from Streptococcus pyogenes are perhaps most widely studied (Xu et. al., 2002). Bacterial collagen-like protein provides a blank canvas onto which modifications can be introduced as desired for specific applications, such as heparin-binding site and integrin binding site (Peng et. al., 2014). However, Scl2 forms a two-domain lollipop-like structure in contrast to the fibrillar structure of mammalian collagen (Figure 1). This is due to the lack of enzymes responsible for post-translational modifications in bacteria. Incorporation of non-coding amino acids (ncAA), such as hydroxyproline (Hyp), through GCE has been gaining a lot of attention. Conventional approach to introducing Hyp relies on the co-expression of prolyl-4-hydoxylase in yeast-based systems, but GCE is a viable alternative. Usually, GCE relies on the use of modified tRNA/synthetase pair, however, this process is time intensive. Instead, we will be using an approach that incorporates residue specific Hyp in the bacterial CLP.</p>
+    
+    <img
+    src="Collagen_Structure.png"
+    alt="Collagen Structure"
+    width="50"
+    height="50"
+    />
+    
+    <p>As shown in figure 2, there are two main approaches to GCE for incorporating ncAA, namely site-specifc and residue-specific (Breunig et. al., 2021). Site-specifc approach requires an engineering orthogonal tRNA/aminoacyl-tRNA synthetase (aaRS) pair which is responsible for aminoacylation of ncAA to tRNA. The ncAA of interest is re-assigned a specific codon and subsequently can be used for introducing ncAA at specific points in the protein. However, this method is difficult due to the requirement of producing tRNA/aaRS pairs and is limited by the rate of aminoacylation. Residue specific incorporation refers to the replacement of a particular canonical amino acid by a non-cannonical amino acid without any preference for the site of the replacement. For this, specific E. Coli auxotroph strains with mutations that prevent the synthesis of particular cannonical amino acid are used. First, E. coli is grown on media containing all 20 amino acids then sifted to media containing 19 amino acids plus the ncAA or ncAA is added after depletion of canonical amino acids. Since the auxotroph strain has no alternatives, it incorporates the ncAA in place of the canonical amino acids. Ilamaran et. al. (2019) used a similar approach for the incorporation of Hyp into Scl2 and verified the formation of a fibrillar structure, similar to human collagen. This showed that residue-specific gene code expansion is a viable option to introduce ncAA in recombinant protein.</p>
+    
+    <h2>Inspirations</h2>
+    <hr />
+    <ul>
+      <li> 
+        <a href="https://2022.igem.wiki/dtu-denmark/description"
+          >2022 DTU-Denmark</a
+        >
+      </li>
+      <li>
+        <a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description"
+          >2019 ITESO Guadalajara</a
+        >
+      </li>
+      <li>
+        <a href="https://2020.igem.org/Team:Technion-Israel/Description"
+          >2020 Technion Israel</a
+        >
+      </li>
+      <li>
+        <a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description"
+          >2020 Botchan Lab Tokyo</a
+        >
+      </li>
+      <li>
+        <a href="https://2020.igem.org/Team:St_Andrews/Description"
+          >2020 St Andrews</a
+        >
+      </li>
+      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
+    </ul>
+
+
+    <h2>Some advice</h2>
+    <hr />
+    <p>
+      We encourage you to put up a lot of information and content on your wiki,
+      but we also encourage you to include summaries as much as possible. If you
+      think of the sections in your project description as the sections in a
+      publication, you should try to be concise, accurate, and unambiguous in
+      your achievements. Your Project Description should include more
+      information than your project abstract.
+    </p>
+    <h2>References</h2>
+    <hr />
+    <p>
+      <ol>
+        <li>Archunan, M.W. and Petronis, S. (2021) ‘Bone Grafts in trauma and orthopaedics’, Cureus [Preprint]. doi:10.7759/cureus.17705.</li>
+        <li>Breunig, S.L. and Tirrell, D.A. (2021) ‘Incorporation of proline analogs into recombinant proteins expressed in escherichia coli’, Synthetic and Enzymatic Modifications of the Peptide Backbone, pp. 545–571. doi:10.1016/bs.mie.2021.05.008.</li>
+        <li>Gomes , J.A.P., Rodrigues , P.F. and Lamazales , L.L. (2022) ‘Keratoconus epidemiology: A review’, Saudi J Ophthalmol, 36(1). doi:10.4103/sjopt.sjopt_204_21.</li>
+        <li>Ilamaran, M. et al. (2019) ‘A self-assembly and higher order structure forming triple helical protein as a novel biomaterial for Cell Proliferation’, Biomaterials Science, 7(5), pp. 2191–2199. doi:10.1039/c9bm00186g.</li>
+        <li>Mathew-Steiner, S.S., Roy, S. and Sen, C.K. (2021) ‘Collagen in wound healing’, Bioengineering, 8(5), p. 63. doi:10.3390/bioengineering8050063.</li>
+        <li>Peng, Y.Y. et al. (2012) ‘Towards scalable production of a collagen-like protein from streptococcus pyogenes for biomedical applications’, Microbial Cell Factories, 11(1). doi:10.1186/1475-2859-11-146.</li>
+        <li>Xu, Y. et al. (2002) ‘Streptococcal SCL1 and SCL2 proteins form collagen-like triple helices’, Journal of Biological Chemistry, 277(30), pp. 27312–27318. doi:10.1074/jbc.m201163200.</li>
+      </ol>
+    </p>
+
+{% endblock %}
+</body>
