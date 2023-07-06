@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+  
+{% block style %}
+
+
+#project {
+  background-color: #fdfaff;
+  box-shadow: 5px 5px #ebd4fa;
+  opacity: .8;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#chip {
+  background-color: #fdfaff;
+  box-shadow: 5px 5px #ebd4fa;
+  opacity: .8;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#neuron {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 80px;
+    background-color: #fff;
+  z-index: 3;
+}
+
+{% endblock %}
+
+{% block title %}Project Description{% endblock %}
+
+{% block title_image %}
+<img src = "https://static.igem.wiki/teams/4812/wiki/description.png" width="100%">
+{% endblock %}
+
+
+{% block page_content %}
+
+
+<br>
+<div class="row mt-4">
+  <div class="col-lg-8">
+    <div id="project">
+    <br>
+    <h2>Project Relevance</h2>
+    <hr>
+    <p>With the aim of revolutionizing tissue engineering and regenerative medicine (TERM), the NYUAD iGEM team is focusing on to producing a bacterial collagen-like protein as a sustainable substitute for animal-derived collagen. Collagen, a major ECM component that is ubiquitous in the human body, is widely used for drug delivery, gene delivery, and TERM due to its biocompatibility and low immunogenicity. Collagen is known as an optimal scaffold base for osteochondral tissue engineering. Traumatic injuries, congenital defects, and aging often result in large bone or cartilage defects that require surgical intervention for functional restoration. It is estimated that over 2.2 million such procedures are performed annually, with the number only growing (Archunan & Petronis, 2021). Moreover, collagen is the key player behind the cornea’s transparency and functioning. However, certain diseases, such as keratoconus, can disrupt its functioning; a current promising technique for resolving this issue is a bioengineered corneal transplant - made entirely of collagen. This procedure has been shown to work on 20 advanced keratoconus patients, but has the potential to change the lives of over 175 million lives of people suffering from vision loss (Gomes et al., 2022). Furthermore, the global market for collagen wound dressings - usually from bovine sources - is USD 926 million, a value expected to expand by a compound annual growth rate of 5% (Mathew-Steiner et al., 2021). </p>
+    <p>Collagen is currently commercially extracted from bovine, porcine, and marine sources; this brings about a range of issues, including the possibility of disease transmission, poor scalability, and ethical and religious concerns. These concerns motivated us to synthesize an engineered, low-cost, and highly scalable alternative to animal-derived collagen by using bacterial collagen-like protein (CLP). Our iGEM project aims to address this issue and could offer several advantages, including high purity, consistent quality, ample supply, and cost-effectiveness</p>
+    <br>
+    <h2>Our Appraoch</h2>
+    <p>Our project focuses on the incorporation of Hyp and other non-coding amino acids, using genetic code expansion (GCE), along with functional peptide sequences in recombinant CLP produced in E. coli. Several collagen-like sequences have been identified in bacteria, and among these Scl1 and Scl2 from Streptococcus pyogenes are perhaps most widely studied (Xu et. al., 2002). Bacterial collagen-like protein provides a blank canvas onto which modifications can be introduced as desired for specific applications, such as heparin-binding site and integrin binding site (Peng et. al., 2014). However, Scl2 forms a two-domain lollipop-like structure in contrast to the fibrillar structure of mammalian collagen (Figure 1). This is due to the lack of enzymes responsible for post-translational modifications in bacteria. Incorporation of non-coding amino acids (ncAA), such as hydroxyproline (Hyp), through GCE has been gaining a lot of attention. Conventional approach to introducing Hyp relies on the co-expression of prolyl-4-hydoxylase in yeast-based systems, but GCE is a viable alternative. Usually, GCE relies on the use of modified tRNA/synthetase pair, however, this process is time intensive. Instead, we will be using an approach that incorporates residue specific Hyp in the bacterial CLP.</p>
+</div>
+
+<div class="image" id="clp">
+  <img src = "https://static.igem.wiki/teams/4812/wiki/clp.png" width="700px">
+  </div>
+  
+
+<div class="row mt-4">
+  <div class="col-lg-8">
+    <h2>Why this project?</h2>
+    <hr>
+    <ul>
+      <li>A clear and concise description of your project.</li>
+      <li>A detailed explanation of why your team chose to work on this particular project.</li>
+      <li>References and sources to document your research.</li>
+      <li>Use illustrations and other visual resources to explain your project.</li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <h2>Inspirations</h2>
+    <hr>
+    <ul>
+      <li><a href="https://2022.igem.wiki/dtu-denmark/description">2022 DTU-Denmark</a></li>
+      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>
+      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>
+      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>
+      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>
+      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-lg-8">
+    <h2>Some advice</h2>
+    <hr>
+    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include summaries as much as possible. If you think of the sections in your project description as the sections in a publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project Description should include more information than your project abstract.</p>
+  </div>
+  <div class="col-lg-4">
+    <h2>References</h2>
+    <hr>
+    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>
+  </div>
+</div>
+
+{% endblock %}
